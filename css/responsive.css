@@ -1,0 +1,122 @@
+/*=========== RESPONSIVE =============*/
+
+@media (max-width: 769px) {
+
+    .asideToggle{
+        position: fixed;
+    }
+    
+    .asideToggle .fa{
+        color: white;
+    }
+
+    #home{
+        display: none;
+    }
+
+    #homeToggle{        
+        color: white;
+        background-image: url(../images/Tormenta.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #homeToggle h1{
+        font-size: 2.5em;
+    }
+
+    #homeToggle button{
+        
+    }
+    
+    .overlay{
+        background-color: rgba(0,0,0,0.5);
+        height: 100vh;
+        display: flex;        /* centrar el texto */
+        align-items: center;
+        justify-content: center;  /* end centrar el texto */
+    }
+
+ /*   #sidebar {
+        height: auto;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        z-index: 1001;
+*/
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media (max-width: 769px) {
+	
+
+}*/
+
+
+/*h2{
+		font-size: 2em;
+	}
+
+	aside{
+  		display: none;
+  	}
+	
+	.about img{
+		width: 51%;
+		height: 1%;
+	}
+	
+	.about .foto{
+		padding: 21% 0 0;
+	}
+
+	.about p{
+		font-size: .9em;
+    	text-align: justify;
+	}
+
+  	section{
+  		margin-left: 0px;
+  	}
+
+  	.informacion{
+  		padding: 0;
+  	}
+		
+	.work img,
+	.habilidades,
+  	.skills,
+  	.portfolio{
+  		height: initial;
+  	}
+
+	.correo{
+		font-size: 1.5em;
+	}
+
+	.contactame .fa {
+    	font-size: 4.2em;
+	}
