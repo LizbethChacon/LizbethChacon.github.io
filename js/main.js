@@ -1,30 +1,57 @@
-// $(document).ready(function(){
-  
-//     $("#home button").on("click",function(){$("#home").hide(0.5,function(){$(".contenido").show('fast')});
-//     }) 
+$(document).ready(initPage);
 
-//     $("#newhome").click(function(){
-//           // $(".contenido").fadeOut("slow");
-//         $("#home").slideToggle(0.5,function(){$(".contenido").hide()})
-//           // $("#home").slideDown("slow",function(){$(".contenido").hide()})
-//     })
-//   })
-  
+function initPage()
+{
+  $("#main_menu a").click(navigatePage);
+  // initScrollMagic();
+}
 
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
+function navigatePage(evt)
+{
+  evt.preventDefault();
+  $("#main_menu a").removeClass('active');
+  $(this).addClass('active');
+
+  var section = $(this).attr('href');
+  var objSection = $(section);
+
+  TweenMax.to('body', 1, {
+    scrollTo:{y:objSection.position().top},
+    ease:Quart.easeOut
   });
-});
+  console.log(objSection.position().top);
+}
+
+function initScrollMagic()
+{
+  var controller = new ScrollMagic.Controller();
+
+  var blockTween = new TimelineMax();
+
+  blockTween.to('#sobremi', 1.5, {backgroundColor: 'red'});
+  blockTween.to('#el_pato', 1.5, {scale: 1.2});
+
+  var portafolioTween = new TimelineMax();
+
+  portafolioTween.to('#portafolio', 1.5, {backgroundColor: 'yellow'});
+  portafolioTween.to('#portafolio', 1.5, {scale: 0.8});
+
+
+  var sobreMiScene = new ScrollMagic.Scene({
+      triggerElement: '#sobremi'
+  })
+  .setTween(blockTween)
+  .addIndicators()
+  .addTo(controller);
+
+  var portafolioMiScene = new ScrollMagic.Scene({
+      triggerElement: '#portafolio'
+  })
+  .setTween(portafolioTween)
+  .addIndicators()
+  .addTo(controller);
+}
+
 
 
 // Front-end, apasionada por el código y amante de la naturaleza.
@@ -49,53 +76,3 @@ function inicio(){
 } 
 window.onload=inicio;
 
-
-// function maquina(contenedor,texto,intervalo){
-//    // Calculamos la longitud del texto
-//    longitud = texto.length; 
-//    // Obtenemos referencia del div donde se va a alojar el texto.
-//    cnt = document.getElementById(contenedor);
-//    var i=0;
-//    // Creamos el timer
-//    timer = setInterval(function(){
-//       // Vamos añadiendo letra por letra y la _ al final.
-//       cnt.innerHTML = cnt.innerHTML.substr(0,cnt.innerHTML.length-1) + texto.charAt(i) + "|";
-//       // Si hemos llegado al final del texto..
-//       if(i >= longitud){
-//          // Salimos del Timer y quitamos la barra baja (_)
-//          clearInterval(timer);
-         
-//          cnt.innerHTML = cnt.innerHTML.substr(0,longitud);
-//          return true;
-//       } else {
-//          // En caso contrario.. seguimos
-//          i++;
-//       }},intervalo);
-// };
-
-// // var texto = "Sueña, Cree, Haz";
-// var texto ="< FRONT-END DEVELOPER />";
-// // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
-// maquina("maquinas",texto,200);
-
-
-
-
-
-//  $(".fa.fa-github").click(function(){
-//         $(".fa.fa-html5").css({"left": "12px", "top": "23px"});
-//         $(".jade").css({"top": "-13px", "left": "138px"});
-//         $(".fa.fa-css3").css({"right": "26px", "top": "23px"});
-// })
-
-
-// $(document).ready(function(){
- 
-//   $("ul li:nth-child(2)").on("click",function(){$(".about").slideDown("slow")});//no corre con id?
-//   $("ul li:nth-child(3)").on("click",function(){$(".portfolio").slideDown("slow")});
-  
-//   })
-
-
-// $("ul li:nth-child(2)").on("click",function(){$("#about").show().addClass("animated slideInDown")});
-//   $("ul li:nth-child(3)").on("click",function(){$("#portfolio").show().addClass("animated slideInDown")});

@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LizbethChacón</title>
     <meta name="Autor" content="LizbethChacon">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>   
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="fonts/font-awesome.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
@@ -31,58 +41,59 @@
                 <a href="#" target="_blank">
                     <img src="images/logo2.png" class="img-responsive img-circle">
                 </a>      
-            </p> 
+            </p>
 
-                <ul class="ca-menu">
-                    <li class="menu-home">
-                        <a href="#">
-                            <span class="ca-icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-                            <div class="ca-content">
-                                <h5 class="ca-main">Home</h5>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-about">
-                        <a href="#about">
-                            <span class="ca-icon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                            <div class="ca-content">
-                                <h5 class="ca-main">About Me</h5>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-skills">
-                        <a href="#skills">
-                            <span class="ca-icon"><i class="fa fa-bolt" aria-hidden="true"></i></span>
-                            <div class="ca-content">
-                                <h5 class="ca-main">Skills</h5>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-skills">
-                        <a href="#habilidades">
-                            <span class="ca-icon"><i class="fa fa-bolt" aria-hidden="true"></i></span>
-                            <div class="ca-content">
-                                <h5 class="ca-main">Soft-Skills</h5>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-projects">
-                        <a href="#portfolio">
-                            <span class="ca-icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
-                            <div class="ca-content">
-                                <h5 class="ca-main">Projects</h5>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-contact">
-                        <a href="#contactame">
-                            <span class="ca-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                            <div class="ca-content">
-                                <h5 class="ca-main">Contact Me</h5>
-                            </div>
-                        </a>
-                    </li>
-                </ul>            
+            <ul id="main_menu" class="ca-menu">
+                <li class="menu-home">
+                    <a href="#home">
+                        <span class="ca-icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <div class="ca-content">
+                            <h5 class="ca-main">Home</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-about">
+                    <a href="#about">
+                        <span class="ca-icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <div class="ca-content">
+                            <h5 class="ca-main">About Me</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-skills">
+                    <a href="#skills">
+                        <span class="ca-icon"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                        <div class="ca-content">
+                            <h5 class="ca-main">Skills</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-skills">
+                    <a href="#habilidades">
+                        <span class="ca-icon"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                        <div class="ca-content">
+                            <h5 class="ca-main">Soft-Skills</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-projects">
+                    <a href="#portfolio">
+                        <span class="ca-icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+                        <div class="ca-content">
+                            <h5 class="ca-main">Projects</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-contact">
+                    <a href="#contactame">
+                        <span class="ca-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <div class="ca-content">
+                            <h5 class="ca-main">Contact</h5>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+                            
             <div class="redSocial">
                 <a href="https://www.facebook.com/lizb.bw" target="_blank"><i class="fa fa-facebook fa-stack" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/LizbNath" target="_blank"><i class="fa fa-twitter fa-stack" aria-hidden="true"></i></a>
@@ -101,20 +112,14 @@
                 </div>
             </div>
         </section>
-<!-- ================ ANIMACIONES - divisores =============== -->
-        <div id="animaciones" class="primer-divisor">
-            <div class="animaciones"> 
-                <p class="text-center"> <h3>"Tú apunta a la luna, porque aún fallando terminarás entre estrellas - Les Brown"</h3> </p>            
-            </div>
-        </div>
 <!-- ================ FRASES =============== -->
         <div id="frase" class="uno">
-            <div class="oscuro">
+            <div class="#">
                 <div class="container-fluid">
                     <div class="row">               
                         <div class="col-md-12"> 
                             <blockquote class="pull-right">
-                            <h4>"Tú apunta a la luna, porque aún fallando terminarás entre estrellas"</h4>
+                            <h5>"Tú apunta a la luna, porque aún fallando terminarás entre estrellas"</h5>
                             <cite title="Nombre Apellidos">Les Brown</cite>
                             </blockquote>
                         </div> 
@@ -149,7 +154,7 @@
         </section>
 
 <!-- ================ ANIMACIONES - divisores =============== -->
-        <!-- <div id="animaciones" class="segundo-divisor">
+        <!-- <div id="animaciones" class="#-divisor">
             <div class="animaciones">
                 <p> <h4>Un poco más sobre mí</h4> </p>
                 <div class="row text-center">
@@ -193,7 +198,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-xs-6">
-                        <div class="icon rotateIn wow tada animated data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration="1000ms; animation-delay:300ms; animation-name: bounceInLeft;">
+                        <div class="icon mar rotateIn wow tada animated data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration="1000ms; animation-delay:300ms; animation-name: bounceInLeft;">
                             <img src="images/html-5.png">
                         </div>
                         <p>HTML5</p>
@@ -203,7 +208,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-xs-6">
-                        <div class="icon mar rotateIn wow tada animated data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration="1000ms; animation-delay:300ms; animation-name: bounceInLeft;">
+                        <div class="icon mar0 rotateIn wow tada animated data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration="1000ms; animation-delay:300ms; animation-name: bounceInLeft;">
                             <img src="images/css-3.png">
                         </div>
                         <p>CSS3</p>
@@ -266,7 +271,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-xs-12">
-                        <div class="icon mar5 rotateIn wow tada animated data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration="1000ms; animation-delay:300ms; animation-name: bounceInLeft;">
+                        <div class="icon mar6 rotateIn wow tada animated data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration="1000ms; animation-delay:300ms; animation-name: bounceInLeft;">
                             <img class="sass" src="images/sass.png">
                         </div>
                         <p>SASS</p>
@@ -285,7 +290,7 @@
                     <div class="row">               
                         <div class="col-md-12"> 
                             <blockquote class="pull-right">
-                            <h4>"La mente que se abre a una nueva idea, jamás volverá a su tamaño original"</h4>
+                            <h5>"La mente que se abre a una nueva idea, jamás volverá a su tamaño original"</h5>
                             <cite title="Nombre Apellidos">Albert Einstein</cite>
                             </blockquote>
                         </div> 
@@ -306,7 +311,7 @@
                 <!--Foto1-->
                 <li class="hex">
                     <a class="hexIn" href="#" data-toggle="modal" data-target="#foto1">
-                        <img src="images/leftright.jpg" alt="Foto de generación" />
+                        <img src="images/management.jpg" alt="Administracion" />
                         <h2>Administración</h2>
                         <p>Conocimientos en base a hotelería</p>
                     </a>
@@ -315,26 +320,26 @@
                 <!--Foto2-->
                 <li class="hex">
                     <a class="hexIn" href="#" data-toggle="modal" data-target="#foto2">
-                        <img src="images/leftright.jpg" alt="medallas" />
-                        <h2>Runner</h2>
-                        <p>Corredora de ocasión</p>
+                        <img src="images/networking.jpg" alt="medallas" />
+                        <h2>Networker</h2>
+                        <p>Desarrollando nuevas habilidades</p>
                     </a>
                 </li>
 
                 <!--Foto3-->
                 <li class="hex">
                     <a class="hexIn" href="#" data-toggle="modal" data-target="#foto3">
-                        <img src="images/leftright.jpg" alt="nevado" />
-                        <h2>Arriesgada</h2>
-                        <p>Dispuesta a hacer cosas nuevas</p>
+                        <img src="images/idiomas.jpg" alt="nevado" />
+                        <h2>Idiomas</h2>
+                        <p>Inglés - Intermedio Francés - Básico</p>
                     </a>
                 </li>
 
                 <!--Foto4-->
                 <li class="hex">
                     <a class="hexIn" href="#" data-toggle="modal" data-target="#foto4">
-                        <img src="images/leftright.jpg" alt="biblioteca" />
-                        <h2>Lectora</h2>
+                        <img src="images/libroycafe.jpg" alt="Lectura" />
+                        <h2>Lectura</h2>
                         <p>Amor y pasión por los libros</p>
                     </a>
                 </li>
@@ -342,27 +347,27 @@
                 <!--Foto5-->
                 <li class="hex">
                     <a class="hexIn" href="#" data-toggle="modal" data-target="#foto5">
-                        <img src="images/leftright.jpg" alt="instagram" />
-                        <h2>Fotógrafa</h2>
-                        <p>Instagramer en construcción</p>
+                        <img src="images/multifacetica.jpg" alt="instagram" />
+                        <h2>Multifacética</h2>
+                        <p>Actividades y facetas de desarrollo</p>
                     </a>
                 </li>
 
                 <!--Foto6-->
                 <li class="hex">
                     <div class="hexIn">
-                        <img src="images/leftright.jpg" alt="" />
+                        <img src="images/team.png" alt="" />
                         <h2>Trabajo en equipo</h2>
-                        <p>Disposición para realizar trabajos colaborativos</p>
+                        <p>Disposición para trabajar en conjunto</p>
                     </div>
                 </li>
 
                 <!--Foto7-->
                 <li class="hex">
                     <div class="hexIn" >
-                        <img src="images/leftright.jpg" alt="" />
+                        <img src="images/vuelo.jpg" alt="" />
                         <h2>Manejo de estrés</h2>
-                        <p>Solución de conflictos en situaciones de estrés</p>
+                        <p>Solucionando situaciones de conflicto</p>
                     </div>
                 </li>
 
@@ -371,21 +376,21 @@
                     <div class="hexIn" href="#">
                         <img src="images/leftright.jpg" alt="" />
                         <h2>Analítica</h2>
-                        <p>Aptitud para realizar análisis de información</p>
+                        <p>Aptitud para el análisis y la lógica</p>
                     </div>
                 </li>
 
                 <!--Foto9-->
                 <li class="hex">
                     <div class="hexIn" href="#">
-                        <img src="images/leftright.jpg" alt="" />
+                        <img src="images/tech.jpg" alt="" />
                         <h2>Creatividad e innovación</h2>
-                        <p>Buscando hacer cambios positivos e implementar nuevas ideas</p>
+                        <p>Buscando implementar nuevas ideas</p>
                     </div>
                 </li>
             </ul>
 
-            <!--Modal para la galería-->
+        <!--Modal para la galería-->
 
             <!--Foto1-->
             <div class="modal fade" id="foto1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -512,7 +517,7 @@
                     <div class="row">               
                         <div class="col-md-12"> 
                             <blockquote class="pull-right">
-                            <h4>"Si añades un poco a lo poco y lo haces así con frecuencia, pronto ese poco llegará a ser mucho"</h4>
+                            <h5>"Si añades un poco a lo poco y lo haces así con frecuencia, pronto ese poco llegará a ser mucho"</h5>
                             <cite title="Nombre Apellidos">Budha</cite>
                             </blockquote>
                         </div> 
@@ -586,7 +591,7 @@
                     <div class="row">               
                         <div class="col-md-12"> 
                             <blockquote class="pull-right">
-                            <h4>"La paciencia es la conciencia de tu fé en ti"</h4>
+                            <h5>"La paciencia es la conciencia de tu fé en ti"</h5>
                             <cite title="Nombre Apellidos">Maickel Melamed</cite>
                             </blockquote>
                         </div> 
@@ -617,9 +622,7 @@
         </section>
     </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/main.js"></script>
     <!-- <script src="js/home.js"></script> -->    
     <!-- <script src="js/jquery.js"></script>
@@ -635,5 +638,3 @@
   </body>
 </html>
 
-
- 
