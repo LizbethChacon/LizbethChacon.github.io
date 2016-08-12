@@ -49,7 +49,6 @@ html{
 }
 /*========================================*/
 section{
-  /*margin-left: 200px;*/
   padding-right: 4%;
   padding-left: 4%;
   height: 100vh;
@@ -283,7 +282,7 @@ aside ul > li > a> div> h5{
     background-size: cover;
     background-attachment: fixed; 
     /*font-family: 'Montserrat';*/
-    color: #CC00E8;
+    color: #900F38;
     display: flex;         /*centrar el texto*/ 
     align-items: center;
     justify-content: center;   /*end centrar el texto*/ 
@@ -294,10 +293,10 @@ aside ul > li > a> div> h5{
 
 /*================ ABOUT ===============*/
 .about{
-    background: url(../images/galeria.jpg); 
+    /*background: url(../images/galeria.jpg); CCC0B7*/
     background-size: cover;
     /*background-attachment: fixed;*/
-    background-color: #CCC0B7;
+    background-color: #D34C89;
     text-align: center;
     display: block;
 }
@@ -333,8 +332,8 @@ aside ul > li > a> div> h5{
 
 /*================= SKILLS - development==================*/
 #skills {
-  background-color: #A94A87  ;
-  /*#514B70  */
+  background-color: #0392F9   ;
+  /*#514B70  A94A87*/
   background-size: cover;
   padding-top: 3%;
 }
@@ -391,8 +390,8 @@ aside ul > li > a> div> h5{
 
 /*================= SKILLS - soft ==================*/
 #habilidades{
-    background-color: #0392F9  ; 
-    /*#4B6890;*/
+    background-color: #2760B3   ; 
+    /*#4B6890; #0392F9*/
     /*background-color: rgba(255, 255, 255, 0.2);*/
     padding-top: 5%;
 }
@@ -453,7 +452,7 @@ aside ul > li > a> div> h5{
   /* prevent line on the right where background doesn't cover image */
   padding: 5%;
   box-sizing: border-box;
-  background-color: rgba(0, 97, 107, 0.9);
+  background-color: rgba(107, 172, 26, 0.9);
   font-weight: 300;
   -webkit-transition: -webkit-transform .2s ease-out, opacity .3s ease-out;
   transition: transform .2s ease-out, opacity .3s ease-out; 
