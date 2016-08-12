@@ -30,8 +30,26 @@ html{
     height: 100vh;
 }
 /*========================================*/
+/* la tabla padre, contenedora */
+.table-layout {
+  display: table;
+  width: 100%;
+}
+.table-layout.table-fixed {
+  table-layout: fixed;
+}
+/* cada celda lateral */
+.table-layout .table-cell {
+  display: table-cell;
+  width: 100%;
+  vertical-align: top; /* necesario para Safari y Firefox */
+}
+.table-layout .fixed-width {
+  width: 200px; /* el ancho fijo que estimes necesario */
+}
+/*========================================*/
 section{
-  margin-left: 200px;
+  /*margin-left: 200px;*/
   padding-right: 4%;
   padding-left: 4%;
   height: 100vh;
@@ -140,6 +158,7 @@ aside ul > li > a> div> h5{
     -ms-transition: all 300ms;
     transition: all 300ms ;
 }
+
 .ca-menu li:hover{
     border-color: #fff004;
     background: #000;
@@ -177,7 +196,7 @@ aside ul > li > a> div> h5{
 
 /*================ FRASES ===============*/
 #frase {
-  margin-top: 60px, 0px, 60px, 230px;
+  margin:60px, 0;
   margin-top: 20px;
   margin-bottom: 20px;
   height: 200px;  
@@ -189,7 +208,7 @@ aside ul > li > a> div> h5{
   padding-top: 60px;
   padding-bottom: 34px;
   padding-right: 5%;
-  margin-left: 200px;
+  /*margin-left: 200px;*/
 }
 .uno{
   background: url(../images/rosa-azul.jpg) ;
