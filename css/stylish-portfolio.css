@@ -123,7 +123,7 @@ a:hover, a:focus, a:active {
   position: relative;
   display: table;
   width: 100%;
-  height: auto;
+  height: 100vh;
   padding-top: 8rem;
   padding-bottom: 8rem;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/Intro.png");   /* linear gradient para agregar sombra */
@@ -361,13 +361,22 @@ a:hover, a:focus, a:active {
 }
 
 .portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.2rem;
+  font-weight: bold;
+}
+.portfolio-item .caption .caption-content span {
+  font-weight: 200;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5) ;
 }
 
 @media (min-width: 992px) {
@@ -426,6 +435,14 @@ a:hover, a:focus, a:active {
 #contact .social-link:hover {
   background-color: #155d74;
   text-decoration: none;
+}
+
+#contact .descargacv a{
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1%;
+  border-radius: 5px;
 }
 
 /* ------------- Footer ------------ */
